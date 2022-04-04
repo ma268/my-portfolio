@@ -2,6 +2,7 @@ import React from "react";
 import { Cta } from "../Common";
 import Headshot from "../../assets/img/greyJumperHeadshot.png";
 import HeaderSocials from "./HeaderSocials";
+import { BsArrowRight } from "react-icons/bs";
 
 function Header() {
   return (
@@ -54,7 +55,7 @@ function Header() {
         id="scroll_down"
         className="absolute right-12 rotate-90 font-light invisible lg:visible"
       >
-        Scroll Down
+        Scroll Down <BsArrowRight className=" inline-block" />
       </a>
       <HeaderSocials />
     </header>
