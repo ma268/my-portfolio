@@ -6,7 +6,7 @@ import { SiHashnode } from "react-icons/si";
 function HeaderSocials() {
   return (
     <div
-      className="flex flex-col gap-5 align-middle justify-center absolute left-12 sm:invisible"
+      className="flex flex-col gap-5 align-middle justify-center absolute left-12 invisible lg:visible"
       id="header-socials"
     >
       <a

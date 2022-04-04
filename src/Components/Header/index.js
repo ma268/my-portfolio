@@ -52,7 +52,7 @@ function Header() {
         href="#work"
         alt="Scroll Down"
         id="scroll_down"
-        className="absolute right-12 rotate-90 font-light sm:invisible"
+        className="absolute right-12 rotate-90 font-light invisible lg:visible"
       >
         Scroll Down
       </a>
