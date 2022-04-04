@@ -47,6 +47,9 @@ function Header() {
           target="_blank"
         />
       </div>
+      <a href="#work" alt="Scroll Down" id="scoll_down" className="">
+        Scroll Down
+      </a>
     </header>
   );
 }
