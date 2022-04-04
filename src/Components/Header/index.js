@@ -48,7 +48,12 @@ function Header() {
           target="_blank"
         />
       </div>
-      <a href="#work" alt="Scroll Down" id="scoll_down" className="">
+      <a
+        href="#work"
+        alt="Scroll Down"
+        id="scroll_down"
+        className="absolute right-12 rotate-90 font-light sm:invisible"
+      >
         Scroll Down
       </a>
       <HeaderSocials />
