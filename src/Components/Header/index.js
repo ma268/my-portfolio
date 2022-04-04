@@ -1,6 +1,7 @@
 import React from "react";
 import { Cta } from "../Common";
 import Headshot from "../../assets/img/greyJumperHeadshot.png";
+import HeaderSocials from "./HeaderSocials";
 
 function Header() {
   return (
@@ -50,6 +51,7 @@ function Header() {
       <a href="#work" alt="Scroll Down" id="scoll_down" className="">
         Scroll Down
       </a>
+      <HeaderSocials />
     </header>
   );
 }
