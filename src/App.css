@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
@@ -31,9 +31,12 @@
 
 .logo {
   padding-left: 10px;
-  color: black;
   text-transform: uppercase;
   font-size: 20px;
+}
+
+.logo a {
+  color: black;
 }
 
 .cta {
@@ -50,3 +53,8 @@
 .secondary-color {
   color: rgb(34, 207, 121);
 }
+
+header {
+  height: 100vh;
+  background-color: #333;
+} */
