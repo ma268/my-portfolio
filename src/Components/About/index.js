@@ -1,6 +1,5 @@
 import React from "react";
 import Headshot from "../../assets/img/greyJumperHeadshot.png";
-import { RiAwardLine, RiUserSmileLine, RiKeyboardLine } from "react-icons/ri";
 
 const About = () => {
   return (
@@ -11,8 +10,8 @@ const About = () => {
       </div>
 
       <div className="max-w-4xl mx-auto">
-        <div className="grid mb-5 gap-8 md:grid-cols-4 my-20">
-          <div className="shrink-0 md:basis-1/4">
+        <div className="my-20">
+          <div className="mx-auto w-96">
             <div className="mx-auto rounded-xl grid place-items-center bg-gradient-to-r from-green-100 to-green-200 aspect-square ">
               <img
                 src={Headshot}
@@ -20,21 +19,6 @@ const About = () => {
                 className="rounded-xl overflow-hidden md:rotate-3 hover:rotate-0 transition"
               />
             </div>
-          </div>
-          <div className="bg-green-200 ring-4 ring-green-100 text-center p-10 rounded-md hover:bg-green-100 transition md:basis-1/4 felx">
-            <RiAwardLine className="inline text-2xl" />
-            <h5 className="text-lg font-semibold">Experience</h5>
-            <small className="font-light text-xs">7+ years of work</small>
-          </div>
-          <div className="bg-green-200 ring-4 ring-green-100 text-center p-10 rounded-md hover:bg-green-100 transition md:basis-1/4">
-            <RiUserSmileLine className="inline text-2xl" />
-            <h5 className="text-lg font-semibold">Clients</h5>
-            <small className="font-light text-xs">7+ years of work</small>
-          </div>
-          <div className="bg-green-200 ring-4 ring-green-100 text-center p-10 rounded-md hover:bg-green-100 transition md:basis-1/4">
-            <RiKeyboardLine className="inline text-2xl" />
-            <h5 className="text-lg font-semibold">Projects</h5>
-            <small className="font-light text-xs">7+ years of work</small>
           </div>
         </div>
         <div className="mx-auto max-w-lg mt-14">

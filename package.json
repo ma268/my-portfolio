@@ -45,5 +45,16 @@
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.23",
     "react-scripts": "5.0.0"
+  },
+  "description": "Welcome to my personal portfolio site.\\ This was built using using React with Create-React-App and TailwindCss.",
+  "main": "tailwind.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ma268/my-portfolio.git"
+  },
+  "author": "Michael Asaad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ma268/my-portfolio/issues"
   }
 }
