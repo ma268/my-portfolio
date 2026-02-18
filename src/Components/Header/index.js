@@ -12,51 +12,39 @@ function Header() {
     >
       <img
         src={Headshot}
-        alt="headshot"
+        alt="Michael Asaad headshot"
         className="w-32 mx-auto my-4 rounded-full ring-4 ring-green-200"
       />
+
       <div className="mb-10 text-center">
-        <p className="font-extrabold text-6xl mb-7">Michael Asaad</p>
-        <p className=" text-xl">
-          A pharmacist turned FullStack Software Engineer with over seven years
-          of experience.
-          <br /> Currently working at{" "}
-          <a
-            className=" text-green-600 hover:text-green-700"
-            href="https://www.taina.tech/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            TAINA Technology
-          </a>{" "}
-          &#38; creator of{" "}
-          <a
-            className=" text-green-600 hover:text-green-700"
-            href="https://simplifyingcode.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            SimplifyingCode.com
-          </a>
+        <p className="font-extrabold text-6xl mb-4">Michael Asaad</p>
+
+        <p className="text-2xl font-semibold mb-4">
+          Software Engineering Team Lead & Product Builder
+        </p>
+
+        <p className="text-xl max-w-2xl mx-auto">
+          10+ years building and delivering production systems in C# / .NET,
+          React and Azure.
+          <br />
+          Currently building a SaaS product focused on helping busy parents
+          simplify weekly meal planning.
         </p>
       </div>
+
       <div className="mx-auto flex gap-x-3">
-        <Cta actionName="Contact me" link="#contact" />
-        <Cta
-          actionName="Dowload my free ebook"
-          link="https://simplifyingcode.com/simplifying-code-welcome"
-          isSecondary
-          target="_blank"
-        />
+        <Cta actionName="View My Work" link="#work" />
+        <Cta actionName="See What I’m Building" link="#building" isSecondary />
       </div>
+
       <a
         href="#work"
-        alt="Scroll Down"
         id="scroll_down"
         className="absolute right-12 rotate-90 font-light invisible lg:visible"
       >
-        Scroll Down <BsArrowRight className=" inline-block" />
+        Scroll Down <BsArrowRight className="inline-block" />
       </a>
+
       <HeaderSocials />
     </header>
   );

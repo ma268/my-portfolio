@@ -24,7 +24,7 @@ const About = () => {
         <div className="mx-auto max-w-lg mt-14">
           <p>
             Motivated, self-driven and detail orientated FullStack engineer of
-            7+ years. With a hands on approach to problem solving experienced in
+            10+ years. With a hands on approach to problem solving experienced in
             large scale C#/ASP.NET MVC development at all stages of the product
             life cycle; from inception and design to developing and maintaining
             web applications.
