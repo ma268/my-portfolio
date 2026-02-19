@@ -1,6 +1,5 @@
 import React from "react";
-import { Cta } from "../Common";
-import Headshot from "../../assets/img/greyJumperHeadshot.png";
+import Headshot from "../../assets/img/greyJumperHeadshotWhiteBg.png";
 import HeaderSocials from "./HeaderSocials";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -8,55 +7,57 @@ function Header() {
   return (
     <header
       id="home"
-      className="h-screen w-full flex flex-col place-content-center"
+      className="min-h-screen w-full flex flex-col justify-center bg-white px-6"
     >
+      {/* Headshot */}
       <img
         src={Headshot}
-        alt="headshot"
-        className="w-32 mx-auto my-4 rounded-full ring-4 ring-green-200"
+        alt="Michael Asaad headshot"
+        className="w-28 mx-auto mb-10 rounded-full border border-gray-200"
       />
-      <div className="mb-10 text-center">
-        <p className="font-extrabold text-6xl mb-7">Michael Asaad</p>
-        <p className=" text-xl">
-          A pharmacist turned FullStack Software Engineer with over seven years
-          of experience.
-          <br /> Currently working at{" "}
-          <a
-            className=" text-green-600 hover:text-green-700"
-            href="https://www.taina.tech/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            TAINA Technology
-          </a>{" "}
-          &#38; creator of{" "}
-          <a
-            className=" text-green-600 hover:text-green-700"
-            href="https://simplifyingcode.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            SimplifyingCode.com
-          </a>
+
+      {/* Main Content */}
+      <div className="text-center mb-16">
+        <h1 className="text-4xl md:text-6xl font-semibold tracking-tight mb-6">
+          Michael Asaad
+        </h1>
+
+        <p className="text-2xl text-gray-800 mb-6">
+          Software Engineering Team Lead & Product Builder
+        </p>
+
+        <p className="text-[18px] leading-[1.7] text-gray-600 max-w-[60ch] mx-auto">
+          10+ years building production systems in C# / .NET, React and Azure.
+          Currently building a SaaS product focused on simplifying weekly meal
+          planning for busy parents.
         </p>
       </div>
-      <div className="mx-auto flex gap-x-3">
-        <Cta actionName="Contact me" link="#contact" />
-        <Cta
-          actionName="Dowload my free ebook"
-          link="https://simplifyingcode.com/simplifying-code-welcome"
-          isSecondary
-          target="_blank"
-        />
+
+      {/* CTAs */}
+      <div className="mx-auto flex flex-col gap-4 md:flex-row md:gap-10">
+        <a
+          href="#work"
+          className="px-6 py-3 bg-black text-white rounded-md hover:opacity-80 transition"
+        >
+          View My Work
+        </a>
+
+        <a
+          href="#building"
+          className="px-6 py-3 text-black underline underline-offset-4 hover:opacity-60 transition"
+        >
+          See What I’m Building
+        </a>
       </div>
+
+      {/* Scroll Indicator */}
       <a
         href="#work"
-        alt="Scroll Down"
-        id="scroll_down"
-        className="absolute right-12 rotate-90 font-light invisible lg:visible"
+        className="absolute right-12 bottom-10 rotate-90 text-sm text-gray-400 hidden lg:block"
       >
-        Scroll Down <BsArrowRight className=" inline-block" />
+        Scroll <BsArrowRight className="inline-block ml-2" />
       </a>
+
       <HeaderSocials />
     </header>
   );

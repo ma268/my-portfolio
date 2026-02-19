@@ -9,15 +9,24 @@ import RecentWork from "./Components/RecentWork";
 
 function App() {
   return (
-    <div className="scroll-smooth">
+    <div className="scroll-smooth bg-white text-black">
+
       <Navbar />
-      <Header />
-      <RecentWork />
-      <About />
-      <Proficiencies />
-      {/* <Testimonials /> */}
-      <Contact />
+
+      {/* Add top padding to prevent navbar overlap */}
+      <main className="pt-24">
+
+        <Header />
+        <RecentWork />
+        <About />
+        <Proficiencies />
+        {/* <Testimonials /> */}
+        <Contact />
+
+      </main>
+
       <Footer />
+
     </div>
   );
 }

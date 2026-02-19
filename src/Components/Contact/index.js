@@ -9,6 +9,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setSendingEmail(true);
+
     emailjs
       .sendForm(
         "service_69c97on",
@@ -17,73 +18,81 @@ const Contact = () => {
         "pUP4SkBvOgTjuFu-C"
       )
       .then(
-        (result) => {
+        () => {
           e.target.reset();
-          toast.success(
-            `Thank you for sending me a message. I'll get back to you as soon as I can.`,
-            {
-              duration: 8000,
-              position: "top-right",
-            }
-          );
+          toast.success("Message sent successfully.", {
+            duration: 4000,
+            position: "bottom-center",
+          });
           setSendingEmail(false);
         },
-        (error) => {
-          console.log(error.text);
-          toast.warning(
-            `Oops, there was an error sending your message, please try again later.`,
-            {
-              duration: 8000,
-              position: "top-right",
-            }
-          );
+        () => {
+          toast.error("Something went wrong. Please try again.", {
+            duration: 4000,
+            position: "bottom-center",
+          });
           setSendingEmail(false);
         }
       );
   };
+
   return (
-    <section id="contact" className="container mx-auto my-28  md:my-60">
-      <div className="text-center mb-14">
-        <h5>feel like chatting?</h5>
-        <h2 className="font-extrabold text-5xl mb-7">Contact Me</h2>
+    <section id="contact" className="max-w-2xl mx-auto px-6 py-28 md:py-56
+">
+
+      {/* Section Header */}
+      <div className="mb-32">
+        <h2 className="text-4xl font-semibold tracking-tight mb-6">
+          Contact
+        </h2>
+        <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch]">
+          If you'd like to connect, collaborate or discuss a project,
+          feel free to reach out.
+        </p>
       </div>
+
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col gap-5 max-w-xl mx-auto"
+        className="flex flex-col gap-10 max-w-[60ch]"
       >
+
         <input
           type="text"
           name="name"
-          placeholder="Your Full Name"
+          placeholder="Your name"
           required
-          className="w-100 p-6 rounded-lg ring ring-green-100 bg-green-200 active:ring-green-300 focus:ring-green-300 outline-none"
+          className="border-b border-gray-300 pb-3 text-[16px] focus:outline-none focus:border-black transition"
         />
+
         <input
           type="email"
           name="email"
-          placeholder="Your Email Address"
+          placeholder="Your email"
           required
-          className="w-100 p-6 rounded-lg ring ring-green-100 bg-green-200 active:ring-green-300 focus:ring-green-300 outline-none"
+          className="border-b border-gray-300 pb-3 text-[16px] focus:outline-none focus:border-black transition"
         />
+
         <textarea
           name="message"
-          rows="7"
-          placeholder="Ask Me Anything!"
+          rows="5"
+          placeholder="Your message"
           required
-          className="w-100 p-6 rounded-lg ring ring-green-100 resize-none bg-green-200 active:ring-green-300 focus:ring-green-300 outline-none"
+          className="border-b border-gray-300 pb-3 text-[16px] resize-none focus:outline-none focus:border-black transition"
         />
+
         <button
           type="submit"
-          className={`${
-            sendingEmail ? " cursor-wait " : " cursor-pointer "
-          } bg-green-600 hover:bg-green-700 rounded-xl text-white p-3`}
-          disabled={sendingEmail ? true : false}
+          disabled={sendingEmail}
+          className="mt-6 px-6 py-3 bg-black text-white rounded-md hover:opacity-80 transition w-fit"
         >
-          {sendingEmail ? `Sending...` : `Reach out`}
+          {sendingEmail ? "Sending..." : "Send Message"}
         </button>
+
       </form>
+
       <Toaster />
+
     </section>
   );
 };

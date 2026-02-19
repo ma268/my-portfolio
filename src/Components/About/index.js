@@ -1,43 +1,42 @@
 import React from "react";
-import Headshot from "../../assets/img/greyJumperHeadshot.png";
 
 const About = () => {
   return (
-    <section id="about" className="container mx-auto my-28  md:my-40">
-      <div className="text-center mb-5">
-        <h5>a little bit</h5>
-        <h2 className="font-extrabold text-5xl mb-7">About Me</h2>
+    <section id="about" className="max-w-2xl mx-auto px-6 py-28 md:py-56
+">
+
+      {/* Section Header */}
+      <div className="mb-32">
+        <h2 className="text-4xl font-semibold tracking-tight mb-6">
+          About
+        </h2>
       </div>
 
-      <div className="max-w-4xl mx-auto">
-        <div className="my-20">
-          <div className="mx-auto w-96">
-            <div className="mx-auto rounded-xl grid place-items-center bg-gradient-to-r from-green-100 to-green-200 aspect-square ">
-              <img
-                src={Headshot}
-                alt="About Me"
-                className="rounded-xl overflow-hidden md:rotate-3 hover:rotate-0 transition"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="mx-auto max-w-lg mt-14">
-          <p>
-            Motivated, self-driven and detail orientated FullStack engineer of
-            7+ years. With a hands on approach to problem solving experienced in
-            large scale C#/ASP.NET MVC development at all stages of the product
-            life cycle; from inception and design to developing and maintaining
-            web applications.
-          </p>
-          <p>
-            I enjoy working independently but also thrive when working in a
-            team, utilising my technical experience and interacting with
-            customers to meet expectations. I am always looking for new
-            opportunities to apply my experience, learn new technologies and
-            advance as a developer.
-          </p>
-        </div>
+      {/* Copy */}
+      <div className="max-w-[60ch] mx-auto space-y-8 text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600">
+
+        <p>
+          I’m a Software Engineering Team Lead with over 10 years of experience
+          building and delivering production systems. My background is rooted in
+          C# / .NET, with experience spanning frontend development, APIs and
+          cloud infrastructure.
+        </p>
+
+        <p>
+          I focus on building reliable, maintainable systems that support real
+          users and real business needs. Over the years I’ve worked across the
+          full product lifecycle — from discovery and system design through to
+          delivery and long-term evolution.
+        </p>
+
+        <p>
+          Alongside my role, I’m building a SaaS product focused on simplifying
+          weekly meal planning for busy parents — applying the same product
+          thinking and execution outside of my day-to-day work.
+        </p>
+
       </div>
+
     </section>
   );
 };

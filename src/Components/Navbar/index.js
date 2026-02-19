@@ -1,56 +1,45 @@
 import React from "react";
 import Scrollspy from "react-scrollspy";
 
-import {
-  RiHome7Line,
-  RiCodeSSlashFill,
-  RiUser4Line,
-  RiShoppingBasketLine,
-  RiBookReadLine,
-  RiMessage3Line,
-} from "react-icons/ri";
-
 const Navbar = () => {
   return (
-    <div className="fixed w-full z-50">
-      <nav className="max-w-screen-lg mx-auto flex flex-row items-center justify-between p-2 md:justify-start md:space-x-10 w-min bg-green-100 mt-2 rounded-lg">
-        <div className="middle-nav grow">
-          <Scrollspy
-            items={["home", "work", "about", "contact", "blog", "products"]}
-            currentClassName="bg-green-300"
-            className="flex justify-center gap-x-1"
-          >
-            <a className="hover:bg-green-200 p-4 rounded-full" href="#home">
-              <RiHome7Line />
+    <div className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-100">
+      <nav className="max-w-xl md:max-w-6xl mx-auto flex justify-center px-6 py-4 md:py-6">
+        <Scrollspy
+          items={["home", "work", "about", "proficiencies", "contact"]}
+          currentClassName="text-black"
+          className="flex justify-center gap-6 md:gap-10 text-xs md:text-sm tracking-wide text-gray-600"
+        >
+          <li>
+            <a href="#home" className="hover:text-black transition">
+              Home
             </a>
-            <a className="hover:bg-green-200 p-4 rounded-full" href="#work">
-              <RiCodeSSlashFill />
+          </li>
+
+          <li>
+            <a href="#work" className="hover:text-black transition">
+              Work
             </a>
-            <a className="hover:bg-green-200 p-4 rounded-full" href="#about">
-              <RiUser4Line />
+          </li>
+
+          <li>
+            <a href="#about" className="hover:text-black transition">
+              About
             </a>
-            <a className="hover:bg-green-200 p-4 rounded-full" href="#contact">
-              <RiMessage3Line />
+          </li>
+
+          <li>
+            <a href="#proficiencies" className="hover:text-black transition">
+              Proficiencies
             </a>
-            <p>|</p>
-            <a
-              className="hover:bg-green-200 p-4 rounded-full"
-              href="https://simplifyingcode.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <RiBookReadLine />
+          </li>
+
+          <li>
+            <a href="#contact" className="hover:text-black transition">
+              Contact
             </a>
-            <a
-              className="hover:bg-green-200 p-4 rounded-full"
-              href="https://programmertees.creator-spring.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <RiShoppingBasketLine />
-            </a>
-          </Scrollspy>
-        </div>
+          </li>
+        </Scrollspy>
       </nav>
     </div>
   );
