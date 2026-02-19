@@ -1,22 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-Cta.defaultProps = {
-  isSecondary: false,
-};
+function Cta({ actionName, link, target, variant }) {
+  const baseClasses =
+    "transition duration-200 ease-in-out";
 
-function Cta({ actionName, isSecondary, link, target }) {
+  const variants = {
+    primary:
+      "px-6 py-3 bg-black text-white rounded-md hover:opacity-80",
+
+    minimal:
+      "text-black underline underline-offset-4 hover:opacity-60",
+
+    outline:
+      "px-6 py-3 border border-black rounded-md hover:bg-black hover:text-white",
+  };
+
   return (
-    <a href={`${link}`} target={target}>
-      <div
-        className={`${
-          isSecondary
-            ? "bg-green-200 hover:bg-green-300"
-            : "bg-green-600 hover:bg-green-700 text-white"
-        } px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium cursor-pointer`}
-      >
-        {actionName}
-      </div>
+    <a
+      href={link}
+      target={target}
+      rel={target === "_blank" ? "noreferrer" : undefined}
+      className={`${baseClasses} ${variants[variant || "primary"]}`}
+    >
+      {actionName}
     </a>
   );
 }
@@ -24,7 +31,8 @@ function Cta({ actionName, isSecondary, link, target }) {
 Cta.propTypes = {
   actionName: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  isSecondary: PropTypes.bool,
+  target: PropTypes.string,
+  variant: PropTypes.oneOf(["primary", "minimal", "outline"]),
 };
 
 export default Cta;

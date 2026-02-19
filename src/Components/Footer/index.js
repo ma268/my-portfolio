@@ -4,9 +4,18 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <footer className="bg-green-200 p-20 border-t-4 border-green-100">
-      <Logo />
-      <Socials />
+    <footer className="border-t border-gray-200 mt-40">
+      <div className="max-w-6xl mx-auto px-6 py-16 flex flex-col items-center gap-8">
+
+        <Logo />
+
+        <Socials />
+
+        <p className="text-sm text-gray-500">
+          © {new Date().getFullYear()} Michael Asaad
+        </p>
+
+      </div>
     </footer>
   );
 };
