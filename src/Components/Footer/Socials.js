@@ -1,5 +1,5 @@
 import React from "react";
-import { FiLinkedin, FiGithub, FiYoutube } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiInstagram, FiYoutube } from "react-icons/fi";
 import { SiHashnode } from "react-icons/si";
 
 function Socials() {
@@ -8,7 +8,7 @@ function Socials() {
 
       <div className="flex gap-8 text-gray-500 text-xl">
         <a
-          href="https://uk.linkedin.com/in/michaelasaad"
+          href="https://www.linkedin.com/in/michaelasaad/"
           target="_blank"
           rel="noreferrer"
           className="hover:text-black transition"
@@ -32,6 +32,15 @@ function Socials() {
           className="hover:text-black transition"
         >
           <SiHashnode />
+        </a>
+
+        <a
+          href="https://www.instagram.com/simplifyingcode/"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:text-black transition"
+        >
+          <FiInstagram />
         </a>
 
         <a

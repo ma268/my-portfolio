@@ -10,7 +10,7 @@ function HeaderSocials() {
       id="header-socials"
     >
       <a
-        href="https://uk.linkedin.com/in/michaelasaad"
+        href="https://www.linkedin.com/in/michaelasaad/"
         target="_blank"
         rel="noreferrer"
       >

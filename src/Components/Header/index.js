@@ -28,8 +28,8 @@ function Header() {
 
         <p className="text-[18px] leading-[1.7] text-gray-600 max-w-[60ch] mx-auto">
           10+ years building production systems in C# / .NET, React and Azure.
-          Currently building a SaaS product focused on simplifying weekly meal
-          planning for busy parents.
+          Currently building DinnerSorted, a recipe keeper and meal planner
+          app live on the App Store.
         </p>
       </div>
 
