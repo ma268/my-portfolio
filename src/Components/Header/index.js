@@ -1,5 +1,5 @@
 import React from "react";
-import Headshot from "../../assets/img/greyJumperHeadshotWhiteBg.png";
+import Headshot from "../../assets/img/headshotGreenBg.jpg";
 import HeaderSocials from "./HeaderSocials";
 import { BsArrowRight } from "react-icons/bs";
 
