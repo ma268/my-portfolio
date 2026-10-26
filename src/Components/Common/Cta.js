@@ -7,13 +7,13 @@ function Cta({ actionName, link, target, variant }) {
 
   const variants = {
     primary:
-      "px-6 py-3 bg-black text-white rounded-md hover:opacity-80",
+      "px-6 py-3 bg-accent text-white rounded-md hover:bg-accent-dark",
 
     minimal:
-      "text-black underline underline-offset-4 hover:opacity-60",
+      "text-accent underline underline-offset-4 hover:text-accent-dark",
 
     outline:
-      "px-6 py-3 border border-black rounded-md hover:bg-black hover:text-white",
+      "px-6 py-3 border border-accent text-accent rounded-md hover:bg-accent hover:text-white",
   };
 
   return (

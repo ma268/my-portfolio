@@ -62,7 +62,7 @@ const Contact = () => {
           name="name"
           placeholder="Your name"
           required
-          className="border-b border-gray-300 pb-3 text-[16px] focus:outline-none focus:border-black transition"
+          className="border-b border-gray-300 pb-3 text-[16px] focus:outline-none focus:border-accent transition"
         />
 
         <input
@@ -70,7 +70,7 @@ const Contact = () => {
           name="email"
           placeholder="Your email"
           required
-          className="border-b border-gray-300 pb-3 text-[16px] focus:outline-none focus:border-black transition"
+          className="border-b border-gray-300 pb-3 text-[16px] focus:outline-none focus:border-accent transition"
         />
 
         <textarea
@@ -78,13 +78,13 @@ const Contact = () => {
           rows="5"
           placeholder="Your message"
           required
-          className="border-b border-gray-300 pb-3 text-[16px] resize-none focus:outline-none focus:border-black transition"
+          className="border-b border-gray-300 pb-3 text-[16px] resize-none focus:outline-none focus:border-accent transition"
         />
 
         <button
           type="submit"
           disabled={sendingEmail}
-          className="mt-6 px-6 py-3 bg-black text-white rounded-md hover:opacity-80 transition w-fit"
+          className="mt-6 px-6 py-3 bg-accent text-white rounded-md hover:bg-accent-dark disabled:opacity-60 transition w-fit"
         >
           {sendingEmail ? "Sending..." : "Send Message"}
         </button>

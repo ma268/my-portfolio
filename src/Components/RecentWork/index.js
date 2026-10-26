@@ -42,7 +42,7 @@ function RecentWork() {
 
           <Cta
             actionName="View Live →"
-            link="http://www.copticsynoddecrees.com/"
+            link="https://www.michaelasaad.com/synodDecreesProject/"
             target="_blank"
             variant="minimal"
           />
@@ -102,10 +102,11 @@ function RecentWork() {
           <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch] mb-8">
             Custom website for a network of private aesthetic clinics,
             designed for performance, responsiveness and patient trust.
+            Built in 2018 and kept as originally shipped.
           </p>
 
           <Cta
-            actionName="View Live →"
+            actionName="View Archived Site →"
             link="https://www.michaelasaad.com/thewrinkleclinics/"
             target="_blank"
             variant="minimal"
