@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
+import { track } from "../../analytics";
 
 const Contact = () => {
   const form = useRef();
@@ -20,6 +21,7 @@ const Contact = () => {
       .then(
         () => {
           e.target.reset();
+          track("contact_form_submitted");
           toast.success("Message sent successfully.", {
             duration: 4000,
             position: "bottom-center",
@@ -27,6 +29,7 @@ const Contact = () => {
           setSendingEmail(false);
         },
         () => {
+          track("contact_form_failed");
           toast.error("Something went wrong. Please try again.", {
             duration: 4000,
             position: "bottom-center",
