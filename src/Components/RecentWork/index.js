@@ -1,8 +1,9 @@
 import React from "react";
 import { Cta } from "../Common";
-import PTPH from "../../assets/img/ptph.png";
-import Synod from "../../assets/img/copticSynodDecrees.png";
-import TheWrinkleClinics from "../../assets/img/theWrinkleClinics.png";
+import DinnerSorted from "../../assets/img/dinnerSorted.webp";
+import PTPH from "../../assets/img/ptph.webp";
+import Synod from "../../assets/img/copticSynodDecrees.webp";
+import TheWrinkleClinics from "../../assets/img/theWrinkleClinics.webp";
 
 function RecentWork() {
   return (
@@ -25,14 +26,50 @@ function RecentWork() {
         {/* Project 1 */}
         <div>
           <img
-            src={Synod}
-            alt="Coptic Synod Decrees Platform"
+            src={DinnerSorted}
+            alt="DinnerSorted app screens showing recipe import, the weekly meal plan and the shopping list"
+            loading="lazy"
+            decoding="async"
             className="w-full max-h-[420px] object-cover rounded-lg mb-16"
           />
 
-          <h3 className="text-2xl font-semibold tracking-tight mb-5">
+          <h3 className="text-2xl font-semibold tracking-tight mb-2">
+            DinnerSorted
+          </h3>
+          <p className="text-sm text-gray-500 mb-5">2026</p>
+
+          <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch] mb-8">
+            Recipe keeper and weekly meal planner for iPhone, designed,
+            built and shipped independently in React Native and TypeScript.
+            Import a recipe from Instagram, TikTok or any recipe site and it
+            becomes a clean recipe, a weekly plan and an automatic shopping
+            list, with a hands-free Cook Mode.
+          </p>
+
+          <Cta
+            actionName="App Store →"
+            link="https://apps.apple.com/gb/app/recipe-keeper-dinnersorted/id6769073249"
+            target="_blank"
+            variant="minimal"
+          />
+        </div>
+
+        <hr className="border-gray-200" />
+
+        {/* Project 2 */}
+        <div>
+          <img
+            src={Synod}
+            alt="Coptic Synod Decrees Platform"
+            loading="lazy"
+            decoding="async"
+            className="w-full max-h-[420px] object-cover rounded-lg mb-16"
+          />
+
+          <h3 className="text-2xl font-semibold tracking-tight mb-2">
             Coptic Synod Decrees Platform
           </h3>
+          <p className="text-sm text-gray-500 mb-5">2022</p>
 
           <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch] mb-8">
             Official English-language publishing platform for the Decrees of
@@ -50,17 +87,20 @@ function RecentWork() {
 
         <hr className="border-gray-200" />
 
-        {/* Project 2 */}
+        {/* Project 3 */}
         <div>
           <img
             src={PTPH}
             alt="Crown Court PTPH Stage Dates App"
+            loading="lazy"
+            decoding="async"
             className="w-full max-h-[420px] object-cover rounded-lg mb-16"
           />
 
-          <h3 className="text-2xl font-semibold tracking-tight mb-5">
+          <h3 className="text-2xl font-semibold tracking-tight mb-2">
             Crown Court PTPH Stage Dates
           </h3>
+          <p className="text-sm text-gray-500 mb-5">2021</p>
 
           <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch] mb-8">
             Cross-platform mobile application built for legal professionals
@@ -87,17 +127,20 @@ function RecentWork() {
 
         <hr className="border-gray-200" />
 
-        {/* Project 3 */}
+        {/* Project 4 */}
         <div>
           <img
             src={TheWrinkleClinics}
             alt="The Wrinkle Clinics Website"
+            loading="lazy"
+            decoding="async"
             className="w-full max-h-[420px] object-cover rounded-lg mb-16"
           />
 
-          <h3 className="text-2xl font-semibold tracking-tight mb-5">
+          <h3 className="text-2xl font-semibold tracking-tight mb-2">
             The Wrinkle Clinics
           </h3>
+          <p className="text-sm text-gray-500 mb-5">2018</p>
 
           <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch] mb-8">
             Custom website for a network of private aesthetic clinics,

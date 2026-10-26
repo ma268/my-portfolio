@@ -1,5 +1,4 @@
 import React from "react";
-import { Cta } from "../Common";
 
 const About = () => {
   return (
@@ -35,15 +34,15 @@ const About = () => {
         </p>
 
         <p>
-          I also write about engineering, product and using AI tooling in
-          production at{" "}
+          I also write about building software products after work, in public,
+          on{" "}
           <a
-            href="https://simplifyingcode.com"
+            href="https://michaelasaad.substack.com"
             target="_blank"
             rel="noreferrer"
             className="text-accent underline underline-offset-4 hover:text-accent-dark transition"
           >
-            SimplifyingCode.com
+            my Substack
           </a>.
         </p>
 
@@ -58,18 +57,15 @@ const About = () => {
         <div className="space-y-10 text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600">
           <div>
             <h4 className="text-black font-semibold mb-2">DinnerSorted</h4>
-            <p className="mb-6">
-              A recipe keeper and weekly meal planner for iPhone. Import
-              recipes straight from Instagram, TikTok or Pinterest and
-              DinnerSorted turns them into a clean recipe, a weekly meal plan
-              and a shopping list that writes itself.
+            <p>
+              Live on the App Store and still in active development.{" "}
+              <a
+                href="#work"
+                className="text-accent underline underline-offset-4 hover:text-accent-dark transition"
+              >
+                See it in Selected Work
+              </a>.
             </p>
-            <Cta
-              actionName="App Store →"
-              link="https://apps.apple.com/gb/app/recipe-keeper-dinnersorted/id6769073249"
-              target="_blank"
-              variant="minimal"
-            />
           </div>
 
           <div>

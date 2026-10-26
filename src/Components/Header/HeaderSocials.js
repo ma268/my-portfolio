@@ -1,7 +1,7 @@
 import React from "react";
 import { FiLinkedin, FiGithub, FiInstagram, FiYoutube } from "react-icons/fi";
 // import { RiStackOverflowLine } from "react-icons/ri";
-import { SiHashnode } from "react-icons/si";
+import { SiHashnode, SiSubstack } from "react-icons/si";
 
 function HeaderSocials() {
   return (
@@ -18,6 +18,13 @@ function HeaderSocials() {
       </a>
       <a href="https://github.com/ma268" target="_blank" rel="noreferrer">
         <FiGithub />
+      </a>
+      <a
+        href="https://michaelasaad.substack.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <SiSubstack />
       </a>
       <a href="https://simplifyingcode.com/" target="_blank" rel="noreferrer">
         <SiHashnode />
