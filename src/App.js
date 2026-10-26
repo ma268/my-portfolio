@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Proficiencies from "./Components/Proficiencies";
 import RecentWork from "./Components/RecentWork";
+import Writing from "./Components/Writing";
 // import Testimonials from "./Components/Testimonials";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Header />
         <RecentWork />
         <About />
+        <Writing />
         <Proficiencies />
         {/* <Testimonials /> */}
         <Contact />

@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-100">
       <nav className="max-w-xl md:max-w-6xl mx-auto flex justify-center px-6 py-4 md:py-6">
         <Scrollspy
-          items={["home", "work", "about", "proficiencies", "contact"]}
+          items={["home", "work", "about", "writing", "proficiencies", "contact"]}
           currentClassName="text-accent font-medium"
           className="flex justify-center gap-6 md:gap-10 text-xs md:text-sm tracking-wide text-gray-600"
         >
@@ -25,6 +25,12 @@ const Navbar = () => {
           <li>
             <a href="#about" className="hover:text-black transition">
               About
+            </a>
+          </li>
+
+          <li>
+            <a href="#writing" className="hover:text-black transition">
+              Writing
             </a>
           </li>
 
