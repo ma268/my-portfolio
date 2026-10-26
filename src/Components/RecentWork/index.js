@@ -1,5 +1,6 @@
 import React from "react";
 import { Cta } from "../Common";
+import DinnerSorted from "../../assets/img/dinnerSorted.jpg";
 import PTPH from "../../assets/img/ptph.png";
 import Synod from "../../assets/img/copticSynodDecrees.png";
 import TheWrinkleClinics from "../../assets/img/theWrinkleClinics.png";
@@ -23,6 +24,36 @@ function RecentWork() {
       <div className="space-y-52">
 
         {/* Project 1 */}
+        <div>
+          <img
+            src={DinnerSorted}
+            alt="DinnerSorted app screens showing recipe import, the weekly meal plan and the shopping list"
+            className="w-full max-h-[420px] object-cover rounded-lg mb-16"
+          />
+
+          <h3 className="text-2xl font-semibold tracking-tight mb-5">
+            DinnerSorted
+          </h3>
+
+          <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch] mb-8">
+            Recipe keeper and weekly meal planner for iPhone, designed,
+            built and shipped independently in React Native and TypeScript.
+            Import a recipe from Instagram, TikTok or any recipe site and it
+            becomes a clean recipe, a weekly plan and an automatic shopping
+            list, with a hands-free Cook Mode.
+          </p>
+
+          <Cta
+            actionName="App Store →"
+            link="https://apps.apple.com/gb/app/recipe-keeper-dinnersorted/id6769073249"
+            target="_blank"
+            variant="minimal"
+          />
+        </div>
+
+        <hr className="border-gray-200" />
+
+        {/* Project 2 */}
         <div>
           <img
             src={Synod}
@@ -50,7 +81,7 @@ function RecentWork() {
 
         <hr className="border-gray-200" />
 
-        {/* Project 2 */}
+        {/* Project 3 */}
         <div>
           <img
             src={PTPH}
@@ -87,7 +118,7 @@ function RecentWork() {
 
         <hr className="border-gray-200" />
 
-        {/* Project 3 */}
+        {/* Project 4 */}
         <div>
           <img
             src={TheWrinkleClinics}
