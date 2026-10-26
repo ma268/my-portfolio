@@ -31,9 +31,10 @@ function RecentWork() {
             className="w-full max-h-[420px] object-cover rounded-lg mb-16"
           />
 
-          <h3 className="text-2xl font-semibold tracking-tight mb-5">
+          <h3 className="text-2xl font-semibold tracking-tight mb-2">
             DinnerSorted
           </h3>
+          <p className="text-sm text-gray-500 mb-5">2026</p>
 
           <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch] mb-8">
             Recipe keeper and weekly meal planner for iPhone, designed,
@@ -61,9 +62,10 @@ function RecentWork() {
             className="w-full max-h-[420px] object-cover rounded-lg mb-16"
           />
 
-          <h3 className="text-2xl font-semibold tracking-tight mb-5">
+          <h3 className="text-2xl font-semibold tracking-tight mb-2">
             Coptic Synod Decrees Platform
           </h3>
+          <p className="text-sm text-gray-500 mb-5">2022</p>
 
           <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch] mb-8">
             Official English-language publishing platform for the Decrees of
@@ -89,9 +91,10 @@ function RecentWork() {
             className="w-full max-h-[420px] object-cover rounded-lg mb-16"
           />
 
-          <h3 className="text-2xl font-semibold tracking-tight mb-5">
+          <h3 className="text-2xl font-semibold tracking-tight mb-2">
             Crown Court PTPH Stage Dates
           </h3>
+          <p className="text-sm text-gray-500 mb-5">2021</p>
 
           <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch] mb-8">
             Cross-platform mobile application built for legal professionals
@@ -126,9 +129,10 @@ function RecentWork() {
             className="w-full max-h-[420px] object-cover rounded-lg mb-16"
           />
 
-          <h3 className="text-2xl font-semibold tracking-tight mb-5">
+          <h3 className="text-2xl font-semibold tracking-tight mb-2">
             The Wrinkle Clinics
           </h3>
+          <p className="text-sm text-gray-500 mb-5">2018</p>
 
           <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch] mb-8">
             Custom website for a network of private aesthetic clinics,
