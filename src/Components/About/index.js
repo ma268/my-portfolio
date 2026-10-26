@@ -41,7 +41,7 @@ const About = () => {
             href="https://simplifyingcode.com"
             target="_blank"
             rel="noreferrer"
-            className="text-black underline underline-offset-4 hover:opacity-60 transition"
+            className="text-accent underline underline-offset-4 hover:text-accent-dark transition"
           >
             SimplifyingCode.com
           </a>.
@@ -78,7 +78,7 @@ const About = () => {
                 href="https://viableideas.com"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:opacity-60 transition"
+                className="text-accent hover:text-accent-dark transition"
               >
                 ViableIdeas.com →
               </a>

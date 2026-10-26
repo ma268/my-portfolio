@@ -11,7 +11,7 @@ function Socials() {
           href="https://www.linkedin.com/in/michaelasaad/"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-black transition"
+          className="hover:text-accent transition"
         >
           <FiLinkedin />
         </a>

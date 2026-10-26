@@ -37,7 +37,7 @@ function Header() {
       <div className="mx-auto flex flex-col gap-4 md:flex-row md:gap-10">
         <a
           href="#work"
-          className="px-6 py-3 bg-black text-white rounded-md hover:opacity-80 transition"
+          className="px-6 py-3 bg-accent text-white rounded-md hover:bg-accent-dark transition"
         >
           View My Work
         </a>
