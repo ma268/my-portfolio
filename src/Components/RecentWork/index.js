@@ -1,9 +1,9 @@
 import React from "react";
 import { Cta } from "../Common";
-import DinnerSorted from "../../assets/img/dinnerSorted.jpg";
-import PTPH from "../../assets/img/ptph.png";
-import Synod from "../../assets/img/copticSynodDecrees.png";
-import TheWrinkleClinics from "../../assets/img/theWrinkleClinics.png";
+import DinnerSorted from "../../assets/img/dinnerSorted.webp";
+import PTPH from "../../assets/img/ptph.webp";
+import Synod from "../../assets/img/copticSynodDecrees.webp";
+import TheWrinkleClinics from "../../assets/img/theWrinkleClinics.webp";
 
 function RecentWork() {
   return (
@@ -28,6 +28,8 @@ function RecentWork() {
           <img
             src={DinnerSorted}
             alt="DinnerSorted app screens showing recipe import, the weekly meal plan and the shopping list"
+            loading="lazy"
+            decoding="async"
             className="w-full max-h-[420px] object-cover rounded-lg mb-16"
           />
 
@@ -59,6 +61,8 @@ function RecentWork() {
           <img
             src={Synod}
             alt="Coptic Synod Decrees Platform"
+            loading="lazy"
+            decoding="async"
             className="w-full max-h-[420px] object-cover rounded-lg mb-16"
           />
 
@@ -88,6 +92,8 @@ function RecentWork() {
           <img
             src={PTPH}
             alt="Crown Court PTPH Stage Dates App"
+            loading="lazy"
+            decoding="async"
             className="w-full max-h-[420px] object-cover rounded-lg mb-16"
           />
 
@@ -126,6 +132,8 @@ function RecentWork() {
           <img
             src={TheWrinkleClinics}
             alt="The Wrinkle Clinics Website"
+            loading="lazy"
+            decoding="async"
             className="w-full max-h-[420px] object-cover rounded-lg mb-16"
           />
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Headshot from "../../assets/img/headshotGreenBg.jpg";
+import Headshot from "../../assets/img/headshotGreenBg.webp";
 import HeaderSocials from "./HeaderSocials";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -27,9 +27,9 @@ function Header() {
         </p>
 
         <p className="text-[18px] leading-[1.7] text-gray-600 max-w-[60ch] mx-auto">
-          10+ years building production systems in C# / .NET, React and Azure.
-          Currently building DinnerSorted, a recipe keeper and meal planner
-          app live on the App Store.
+          Documenting my journey from Software Engineering Team Lead to
+          building profitable software products. 10+ years in C# / .NET,
+          React and Azure, now shipping DinnerSorted, live on the App Store.
         </p>
       </div>
 
@@ -43,10 +43,10 @@ function Header() {
         </a>
 
         <a
-          href="#building"
+          href="#writing"
           className="px-6 py-3 text-black underline underline-offset-4 hover:opacity-60 transition"
         >
-          See What I’m Building
+          Follow the Journey
         </a>
       </div>
 

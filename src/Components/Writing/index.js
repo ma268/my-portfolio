@@ -49,14 +49,34 @@ const Writing = () => {
         ))}
       </div>
 
-      <div className="max-w-[60ch] mt-20">
+      {/* Subscribe */}
+      <div className="max-w-[60ch] mt-24">
+        <h3 className="text-xl font-semibold tracking-tight mb-3">
+          Follow along
+        </h3>
+        <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 mb-6">
+          Get new posts by email as I build in public.
+        </p>
+        <iframe
+          src="https://michaelasaad.substack.com/embed"
+          title="Subscribe to Michael Asaad on Substack"
+          width="100%"
+          height="150"
+          style={{ border: "1px solid #e5e7eb", background: "white" }}
+          frameBorder="0"
+          scrolling="no"
+          loading="lazy"
+        />
+      </div>
+
+      <div className="max-w-[60ch] mt-12">
         <a
           href={SUBSTACK_URL}
           target="_blank"
           rel="noreferrer"
           className="text-accent underline underline-offset-4 hover:text-accent-dark transition"
         >
-          Read and subscribe on Substack →
+          Read on Substack →
         </a>
       </div>
 
