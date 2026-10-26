@@ -1,6 +1,6 @@
 import React from "react";
 import { FiLinkedin, FiGithub, FiInstagram, FiYoutube } from "react-icons/fi";
-import { SiHashnode } from "react-icons/si";
+import { SiSubstack } from "react-icons/si";
 
 function Socials() {
   return (
@@ -26,12 +26,12 @@ function Socials() {
         </a>
 
         <a
-          href="https://simplifyingcode.com/"
+          href="https://michaelasaad.substack.com"
           target="_blank"
           rel="noreferrer"
           className="hover:text-black transition"
         >
-          <SiHashnode />
+          <SiSubstack />
         </a>
 
         <a

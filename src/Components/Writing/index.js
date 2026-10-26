@@ -1,26 +1,14 @@
 import React from "react";
 
+const SUBSTACK_URL = "https://michaelasaad.substack.com";
+
 const posts = [
   {
-    title: "I Shipped Code I Didn't Fully Understand. Here's How I'm Thinking About That.",
-    date: "June 2026",
+    title: "I can't quit my job to build. So I build after bedtime.",
+    date: "October 2026",
     summary:
-      "Shipping a solo-built app with AI tools, and the responsibility that comes with owning code you didn't write line by line.",
-    link: "https://simplifyingcode.com/i-shipped-code-i-didn-t-fully-understand-here-s-how-i-m-thinking-about-that",
-  },
-  {
-    title: "Data Models: The Blueprint for Your App's Brain",
-    date: "July 2025",
-    summary:
-      "How relational, document and graph models organise and query data, and how to choose between them.",
-    link: "https://simplifyingcode.com/data-models-the-blueprint-for-your-apps-brain",
-  },
-  {
-    title: "Building Great Software: Reliable, Scalable and Maintainable",
-    date: "March 2025",
-    summary:
-      "The three qualities that separate software that lasts from software that gets rewritten.",
-    link: "https://simplifyingcode.com/building-great-software-the-three-musketeers-reliable-scalable-and-maintainable",
+      "My first real post: who I am, what I'm building, and why I'm doing it in public this time.",
+    link: "https://michaelasaad.substack.com/p/i-cant-quit-my-job-to-build-so-i",
   },
 ];
 
@@ -35,7 +23,8 @@ const Writing = () => {
           Writing
         </h2>
         <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch]">
-          Notes on engineering, product and using AI tooling in production.
+          Building profitable software products after work: launching apps,
+          growing an audience and balancing it with family life.
         </p>
       </div>
 
@@ -62,12 +51,12 @@ const Writing = () => {
 
       <div className="max-w-[60ch] mt-20">
         <a
-          href="https://simplifyingcode.com"
+          href={SUBSTACK_URL}
           target="_blank"
           rel="noreferrer"
           className="text-accent underline underline-offset-4 hover:text-accent-dark transition"
         >
-          All posts on SimplifyingCode.com →
+          Read and subscribe on Substack →
         </a>
       </div>
 

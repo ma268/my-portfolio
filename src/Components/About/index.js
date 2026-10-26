@@ -34,15 +34,15 @@ const About = () => {
         </p>
 
         <p>
-          I also write about engineering, product and using AI tooling in
-          production at{" "}
+          I also write about building software products after work, in public,
+          on{" "}
           <a
-            href="https://simplifyingcode.com"
+            href="https://michaelasaad.substack.com"
             target="_blank"
             rel="noreferrer"
             className="text-accent underline underline-offset-4 hover:text-accent-dark transition"
           >
-            SimplifyingCode.com
+            my Substack
           </a>.
         </p>
 
