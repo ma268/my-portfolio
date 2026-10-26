@@ -25,6 +25,34 @@ function RecentWork() {
         {/* Project 1 */}
         <div>
           <img
+            src={Synod}
+            alt="Coptic Synod Decrees Platform"
+            className="w-full max-h-[420px] object-cover rounded-lg mb-16"
+          />
+
+          <h3 className="text-2xl font-semibold tracking-tight mb-5">
+            Coptic Synod Decrees Platform
+          </h3>
+
+          <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch] mb-8">
+            Official English-language publishing platform for the Decrees of
+            the Holy Synod. Built with structured search, responsive design
+            and long-term maintainability in mind.
+          </p>
+
+          <Cta
+            actionName="View Live →"
+            link="http://www.copticsynoddecrees.com/"
+            target="_blank"
+            variant="minimal"
+          />
+        </div>
+
+        <hr className="border-gray-200" />
+
+        {/* Project 2 */}
+        <div>
+          <img
             src={PTPH}
             alt="Crown Court PTPH Stage Dates App"
             className="w-full max-h-[420px] object-cover rounded-lg mb-16"
@@ -55,34 +83,6 @@ function RecentWork() {
               variant="minimal"
             />
           </div>
-        </div>
-
-        <hr className="border-gray-200" />
-
-        {/* Project 2 */}
-        <div>
-          <img
-            src={Synod}
-            alt="Coptic Synod Decrees Platform"
-            className="w-full max-h-[420px] object-cover rounded-lg mb-16"
-          />
-
-          <h3 className="text-2xl font-semibold tracking-tight mb-5">
-            Coptic Synod Decrees Platform
-          </h3>
-
-          <p className="text-[16px] leading-[1.9] md:text-[17px] md:leading-[1.8] text-gray-600 max-w-[60ch] mb-8">
-            Official English-language publishing platform for the Decrees of
-            the Holy Synod. Built with structured search, responsive design
-            and long-term maintainability in mind.
-          </p>
-
-          <Cta
-            actionName="View Live →"
-            link="http://www.copticsynoddecrees.com/"
-            target="_blank"
-            variant="minimal"
-          />
         </div>
 
         <hr className="border-gray-200" />
